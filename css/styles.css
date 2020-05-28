@@ -1,0 +1,112 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+h1{
+    padding: 0 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h2,h3{
+    text-align: center;
+}
+.cont-body{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: table;
+}
+.cont-image{
+    width: 50%;
+    display: table-cell;
+    border: 1px solid #000000;
+    position: relative;
+    overflow: hidden;
+}
+.cont-image img{
+    width: 100%;
+    cursor: pointer;
+}
+.contstars{
+    max-width: 1280px;
+    width: calc(100% - 40px);
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.star{
+    display: table-cell;
+    width: 14.28%;
+}
+.star img{
+    width: 100%;
+    max-width: 84px;
+    display: block;
+    margin: 0 auto;
+}
+.diferencia{
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+}
+.detectado{
+    background:rgba(0,0,0,0.5);
+    border: 5px solid #77FF00;
+    pointer-events: none;
+}
+.bgpopup{
+    display: table;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.popup-transparent{
+    display: table-cell;
+    vertical-align: middle;
+}
+.popup-transparent h2{
+    color: #ffffff;
+    font-size: 44px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+.popup-transparent h3{
+    color: #ffffff;
+    font-size: 34px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+.button-next{
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #FF8800;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media(max-width:640px){
+    .cont-image {
+        width: 80%;
+        display: table;
+        border: 1px solid #000000;
+        position: relative;
+        margin: 0 auto;
+    }
+    .popup-transparent h2{
+        font-size: 28px;
+    }
+    .popup-transparent h3{
+        font-size: 24px;
+    }
+}
